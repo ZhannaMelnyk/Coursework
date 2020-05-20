@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Сroissant",
+      "description": "Confectionery masterpiece containing almond cream of its own production.",
+      "ingredients": [
+        "wheat flour",
+        "sugar",
+        "egg",
+        "dry yeast",
+        "butter",
+        "oil",
+        "rock salt"
+      ],
+      "price": "25 UAH"
+    },
+    {
+      "id": 2,
+      "name": "Muffin",
+      "description": "Muffins own the sky! After all, they are pieces of happiness in the palm of your hand.",
+      "ingredients": [
+        "butter",
+        "dark chocolate",
+        "sugar",
+        "egg",
+        "egg yolk",
+        "wheat flour",
+        "salt",
+        "powdered sugar"
+      ],
+      "price": "25 UAH"
+    }
+  ]
+}
