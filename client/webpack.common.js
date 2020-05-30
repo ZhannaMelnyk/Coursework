@@ -15,7 +15,15 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ["style-loader", "css-loader"]
-			}
+			},
+			{
+				test: /\.(jpg|png|svg|ico)$/,
+				loader: 'file-loader',
+				options: {
+					name: 'assests/images/[name].[ext]',
+					esModule: false
+				}
+			},
 		]
 	},
 	resolve: { extensions: ["*", ".js", ".jsx"] },

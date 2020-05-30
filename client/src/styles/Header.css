@@ -1,0 +1,39 @@
+.header {
+    height: 110px;
+    padding: 0 1vw 10px;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: end;
+}
+
+.header__logo {
+    height: 100px;
+}
+
+.header__rectangle {
+    height: 10px;
+    margin-bottom: 4px;
+    background-color: #fac785;
+}
+
+.header__nav a {
+    font-size: 20px;
+    color: #3c3742;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__nav a:first-child {
+    margin-right: 2vw;
+}
+
+.header__nav a:focus {
+    color: #cec9d2;
+    text-decoration: underline;
+}
+
+.header__nav a:hover {
+    color: #fac785;
+    text-decoration: underline;
+}
