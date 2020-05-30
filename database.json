@@ -13,7 +13,8 @@
         "oil",
         "rock salt"
       ],
-      "price": "25 UAH"
+      "price": "25 UAH",
+      "image": "http://localhost:3030/api/images/croissant.jpg"
     },
     {
       "id": 2,
@@ -29,7 +30,8 @@
         "salt",
         "powdered sugar"
       ],
-      "price": "25 UAH"
+      "price": "25 UAH",
+      "image": "http://localhost:3030/api/images/muffin.jpg"
     }
   ]
 }
