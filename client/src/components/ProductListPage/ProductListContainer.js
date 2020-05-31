@@ -1,26 +1,37 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { listThunk } from '../../store/thunk/productListThunk'
 import ProductsList from './ProductListPresentation'
 
-export default class ProductListContainer extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			products: null
-		}
-	}
+class ProductListContainer extends React.Component {
 
 	componentDidMount() {
-		fetch('http://localhost:3030/api/products')
-			.then(response => response.json())
-			.then(products => this.setState({ products: products }))
-			.catch(error => { throw new Error('something wrong') })
+		this.props.getList();
 	}
 
 	render() {
-		if (this.state.products) {
-			return <ProductsList products={this.state.products} />
+		if (this.props.error) {
+			return <></>
+		}
+
+		if (this.props.isLoaded) {
+			return <ProductsList products={this.props.list} />
 		} else {
 			return <span>Loading</span>
 		}
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		list: state.listReducer.list,
+		error: state.listReducer.error,
+		isLoaded: state.listReducer.isLoaded
+	}
+}
+
+const mapDispatchToProps = {
+	getList: () => listThunk()
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductListContainer);

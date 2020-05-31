@@ -3,7 +3,6 @@ import '../../styles/ProductDetail.css'
 
 class ProductDetail extends React.Component {
 	render() {
-		console.log(this.props);
 		return <main className='product'>
 			<img className='product__image' src={this.props.product.image} />
 			<h2 className='product__title'>{this.props.product.name}</h2>

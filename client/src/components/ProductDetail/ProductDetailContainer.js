@@ -1,26 +1,37 @@
 import React from 'react';
-import ProductDetail from './ProductDetailPresentation'
+import { connect } from 'react-redux';
+import { detailsThunk } from '../../store/thunk/productDetailThunk';
+import ProductDetail from './ProductDetailPresentation';
 
-export default class ProductsDetailContainer extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			product: null
-		}
-	}
+class ProductsDetailContainer extends React.Component {
 
 	componentDidMount() {
-		fetch(`http://localhost:3030/api/products/${this.props.id}`)
-			.then(response => response.json())
-			.then(product => this.setState({product: product}))
-			.catch(error => { throw new Error('something wrong') })
+		this.props.getDetails(this.props.id);
 	}
 
 	render() {
-		if (this.state.product) {
-			return <ProductDetail product={this.state.product}/>
+		if (this.props.error) {
+			return <></>
+		}
+		
+		if (this.props.isLoaded) {
+			return <ProductDetail product={this.props.productDetails} />
 		} else {
 			return <span>Loading</span>
 		}
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		productDetails: state.detailsReducer.product,
+		error: state.detailsReducer.error,
+		isLoaded: state.detailsReducer.isLoaded
+	}
+}
+
+const mapDispatchToProps = {
+	getDetails: (id) => detailsThunk(id)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductsDetailContainer);
