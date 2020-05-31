@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductsList from './ProductsListPresentational'
+import ProductsList from './ProductListPresentation'
 
-export default class ProductsListContainer extends React.Component {
+export default class ProductListContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {

@@ -1,4 +1,6 @@
 .App {
     display: grid;
     grid-gap: 2vw;
+    grid-template-rows: max-content auto max-content;
+    min-height: 100vh;
 }

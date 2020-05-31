@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductDetail from './ProductDetailPresentational'
+import ProductDetail from './ProductDetailPresentation'
 
 export default class ProductsDetailContainer extends React.Component {
 	constructor(props) {

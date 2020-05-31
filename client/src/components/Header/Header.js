@@ -10,7 +10,7 @@ class Header extends React.Component {
 			<div className='header__rectangle' />
 			<nav className='header__nav'>
 				<Link to='/'>Home</Link>
-				<Link to='/lalala'>Card</Link>
+				<Link to='/lalala'>Cart</Link>
 			</nav>
 		</header>
 	}

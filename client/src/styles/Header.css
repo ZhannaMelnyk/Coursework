@@ -13,8 +13,12 @@
 
 .header__rectangle {
     height: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 32px;
     background-color: #fac785;
+}
+
+.header__nav {
+    margin-bottom: 27px;
 }
 
 .header__nav a {
