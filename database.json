@@ -30,8 +30,56 @@
         "salt",
         "powdered sugar"
       ],
-      "price": "25 UAH",
+      "price": "30 UAH",
       "image": "http://localhost:3030/api/images/muffin.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Éclairs",
+      "description": "You haven't enjoyed an Éclair until you've tried a our fresh eclair!",
+      "ingredients": [
+        "flour",
+        "water",
+        "butter",
+        "sugar",
+        "egg",
+        "salt"
+      ],
+      "price": "35 UAH",
+      "image": "http://localhost:3030/api/images/eclair.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Baguette",
+      "description": "This is one of the most striking symbols of France ... a country that is considered a cradle of food and eldorado for all food lovers.",
+      "ingredients": [
+        "water",
+        "dry yeast",
+        "salt",
+        "sugar",
+        "olive oil",
+        "sesame",
+        "wheat flour"
+      ],
+      "price": "25 UAH",
+      "image": "http://localhost:3030/api/images/baguette.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Doughnut",
+      "description": "Once you've tasted these irresistibly plump and sugary treats, there'll be no going back!",
+      "ingredients": [
+        "milk",
+        "dry yeast",
+        "egg",
+        "butter",
+        "sugar",
+        "salt",
+        "flour",
+        "oil"
+      ],
+      "price": "30 UAH",
+      "image": "http://localhost:3030/api/images/doughnut.jpg"
     }
   ]
 }
