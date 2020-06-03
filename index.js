@@ -1,3 +1,4 @@
+require('dotenv-expand')(require('dotenv').config());
 const express = require('express');
 const cors = require('cors');
 require('./config/dbConfig');
@@ -13,7 +14,7 @@ routes(app);
 
 app.use('/', express.static('./client/dist'));
 
-const port = 3030;
+const port = process.env.SERVER_PORT;
 app.listen(port, () => {});
 
 express.app = app;

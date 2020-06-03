@@ -2,7 +2,7 @@ import { successfulFetchList, failureFetchList } from '../actions/productListAct
 
 export const listThunk = () => {
 	return (dispatch) => {
-		fetch(`http://localhost:3030/api/products/`)
+		fetch(`${process.env.API_URL}/api/products/`)
 			.then(response => response.json())
 			.then(list => dispatch(successfulFetchList(list)))
 			.catch(error => dispatch(failureFetchList(error)))
