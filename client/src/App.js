@@ -4,6 +4,7 @@ import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from 'react-redux';
 import rootReducer from "./store/reducers/rootReducer";
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import Header from "./components/Header/Header";
 import ProductsDetailContainer from "./components/ProductDetail/ProductDetailContainer";
 import ProductListContainer from "./components/ProductListPage/ProductListContainer";
@@ -20,10 +21,12 @@ class App extends React.Component {
 				<BrowserRouter>
 					<div className="App">
 						<Header />
-						<Switch>
-							<Route exact path={['/', '/products']} component={ProductListContainer} />
-							<Route exact path='/products/:id' render={(props) => <ProductsDetailContainer id={props.match.params.id} />} />
-						</Switch>
+						<ErrorBoundary>
+							<Switch>
+								<Route exact path={['/', '/products']} component={ProductListContainer} />
+								<Route exact path='/products/:id' render={(props) => <ProductsDetailContainer id={props.match.params.id} />} />
+							</Switch>
+						</ErrorBoundary>
 						<Footer />
 					</div>
 				</BrowserRouter>

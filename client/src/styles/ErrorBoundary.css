@@ -1,0 +1,8 @@
+.error-boundary {
+    justify-self: center;
+    text-align: center;
+}
+
+.error-boundary__title {
+    margin-bottom: 25px;
+}
