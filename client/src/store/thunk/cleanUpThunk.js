@@ -1,7 +1,13 @@
-import { cleanUp } from '../actions/cleanUpAction';
+import { cleanUpList, cleanUpDetail } from '../actions/cleanUpAction';
 
-export const detailsThunk = () => {
+export const cleanUpListThunk = () => {
 	return (dispatch) => {
-		dispatch(cleanUp());
+		dispatch(cleanUpList());
+	}
+}
+
+export const cleanUpDetailThunk = () => {
+	return (dispatch) => {
+		dispatch(cleanUpDetail());
 	}
 }

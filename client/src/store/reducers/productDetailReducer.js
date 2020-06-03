@@ -1,8 +1,8 @@
 import { SUCCESSFUL_FETCH_DETAILS, FAILURE_FETCH_DETAILS } from '../actions/productDetailAction'
-import { CLEAN_UP } from '../actions/cleanUpAction'
+import { CLEAN_UP_DETAIL } from '../actions/cleanUpAction'
 
 const initialState = {
-	data: null,
+	data: {},
 	error: null,
 	isLoaded: false
 }
@@ -13,7 +13,7 @@ export const detailsReducer = (state = initialState, action) => {
 			return { ...state, data: action.data, isLoaded: true }
 		case FAILURE_FETCH_DETAILS:
 			return { ...state, error: action.error, isLoaded: true }
-		case CLEAN_UP:
+		case CLEAN_UP_DETAIL:
 			return { initialState }
 		default:
 			return state;

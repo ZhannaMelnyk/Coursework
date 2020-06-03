@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { detailsThunk } from '../../store/thunk/productDetailThunk';
 import ProductDetail from './ProductDetailPresentation';
-import { cleanUp } from '../../store/actions/cleanUpAction';
+import { cleanUpDetailThunk } from '../../store/thunk/cleanUpThunk';
 
 class ProductsDetailContainer extends React.Component {
 
@@ -11,7 +11,7 @@ class ProductsDetailContainer extends React.Component {
 	}
 	
 	componentWillUnmount() {
-		this.props.cleanUp();
+		this.props.cleanUpDetail();
 	}
 
 	render() {
@@ -37,7 +37,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
 	getDetails: (id) => detailsThunk(id),
-	cleanUp: () => cleanUp()
+	cleanUpDetail: () => cleanUpDetailThunk()
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductsDetailContainer);

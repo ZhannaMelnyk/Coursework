@@ -1,7 +1,14 @@
-export const CLEAN_UP = 'CLEAN_UP';
+export const CLEAN_UP_LIST = 'CLEAN_UP_LIST';
+export const CLEAN_UP_DETAIL = 'CLEAN_UP_DETAIL';
 
-export const cleanUp = () => {
+export const cleanUpList = () => {
 	return {
-		type: CLEAN_UP
+		type: CLEAN_UP_LIST
+	}
+}
+
+export const cleanUpDetail = () => {
+	return {
+		type: CLEAN_UP_DETAIL
 	}
 }

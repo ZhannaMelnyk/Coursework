@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { listThunk } from '../../store/thunk/productListThunk'
 import ProductsList from './ProductListPresentation'
-import { cleanUp } from '../../store/actions/cleanUpAction';
+import { cleanUpListThunk } from '../../store/thunk/cleanUpThunk';
 
 class ProductListContainer extends React.Component {
 
@@ -11,7 +11,7 @@ class ProductListContainer extends React.Component {
 	}
 
 	componentWillUnmount() {
-		this.props.cleanUp();
+		this.props.cleanUpList();
 	}
 
 	render() {
@@ -37,7 +37,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
 	getList: () => listThunk(),
-	cleanUp: () => cleanUp()
+	cleanUpList: () => cleanUpListThunk()
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductListContainer);
