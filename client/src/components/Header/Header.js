@@ -6,7 +6,7 @@ const logo = require('../../assets/Bakery-logo.png')
 class Header extends React.Component {
 	render() {
 		return <header className='header'>
-			<Link to='/products'>
+			<Link className='header__logo-link' to='/products'>
 				<img className='header__logo' src={logo} alt='bakery-logo' />
 			</Link>
 			<div className='header__rectangle' />
@@ -14,6 +14,10 @@ class Header extends React.Component {
 				<Link to='/products'>Home</Link>
 				<Link to='/cart'>Cart</Link>
 			</nav>
+			<div className='header__search'>
+				<input className='header__search-input' type='text' placeholder='Search' />
+				<input className='header__search-btn' type='submit' value='Search'/>
+			</div>
 		</header>
 	}
 }
