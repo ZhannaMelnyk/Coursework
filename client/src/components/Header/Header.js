@@ -1,6 +1,7 @@
 import React from "react";
 import '../../styles/Header.css'
 import { Link } from "react-router-dom";
+import SearchBoxContainer from "../SearchBox/SearchBoxContainer";
 const logo = require('../../assets/Bakery-logo.png')
 
 class Header extends React.Component {
@@ -14,10 +15,7 @@ class Header extends React.Component {
 				<Link to='/products'>Home</Link>
 				<Link to='/cart'>Cart</Link>
 			</nav>
-			<div className='header__search'>
-				<input className='header__search-input' type='text' placeholder='Search' />
-				<input className='header__search-btn' type='submit' value='Search'/>
-			</div>
+			<SearchBoxContainer />
 		</header>
 	}
 }
