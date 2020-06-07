@@ -1,22 +1,10 @@
-.header__search {
-    grid-column: 3;
-    grid-row: 3;
+.search {
+  text-align: right;
+  margin: 0 1vw 1vw 0;
 }
 
-.header__search-input {
-    border: 2px solid #fac785;
-    height: 20px;
-}
-
-.header__search-btn {
-    background: #fac785;
-    border: 2px solid #fac785;
-    height: 26px;
-    color: #3c3742;
-}
-
-.header__search-btn:hover {
-    color: #fac785;
-    background: #3c3742;
-    border: 2px solid #3c3742;
+.search-input {
+  border: 2px solid #fac785;
+  height: 26px;
+  width: 25%;
 }

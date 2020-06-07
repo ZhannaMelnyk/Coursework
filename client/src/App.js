@@ -15,24 +15,24 @@ import "./styles/common.css";
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
 class App extends React.Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<BrowserRouter>
-					<div className="App">
-						<Header />
-						<ErrorBoundary>
-							<Switch>
-								<Route exact path={['/', '/products']} component={ProductListContainer} />
-								<Route exact path='/products/:id' render={(props) => <ProductsDetailContainer id={props.match.params.id} />} />
-							</Switch>
-						</ErrorBoundary>
-						<Footer />
-					</div>
-				</BrowserRouter>
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            <Header />
+            <ErrorBoundary>
+              <Switch>
+                <Route exact path={['/', '/products']} render={(props) => <ProductListContainer history={props.history} />} />
+                <Route exact path='/products/:id' render={(props) => <ProductsDetailContainer id={props.match.params.id} />} />
+              </Switch>
+            </ErrorBoundary>
+            <Footer />
+          </div>
+        </BrowserRouter>
+      </Provider>
+    );
+  }
 }
 
 export default App;

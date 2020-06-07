@@ -2,12 +2,11 @@ import React from "react";
 import '../../styles/SearchBox.css'
 
 class SearchBox extends React.Component {
-    render() {
-        return <div className='header__search'>
-            <input className='header__search-input' type='text' placeholder='Search' />
-            <input className='header__search-btn' type='submit' value='Search' />
-        </div>
-    }
+  render() {
+    return <div className='search'>
+      <input className='search-input' type='text' placeholder='Search...' value={this.props.searchQuery} onChange={this.props.handleQueryChange.bind(this)} />
+    </div>
+  }
 }
 
 export default SearchBox;
