@@ -9,9 +9,13 @@ class ProductsList extends React.Component {
       <SearchBoxContainer history={this.props.history}/>
       <div className='products-list'>
         {
+          this.props.products.length !== 0
+          ?
           this.props.products.map(product => {
             return <ProductCard data={product} />
           })
+          :
+          <span className='message'>No results</span>         
         }
       </div>
     </main>

@@ -4,3 +4,10 @@
     grid-template-rows: max-content auto max-content;
     min-height: 100vh;
 }
+
+.message {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}

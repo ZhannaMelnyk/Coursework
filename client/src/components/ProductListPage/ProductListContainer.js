@@ -26,7 +26,7 @@ class ProductListContainer extends React.Component {
       return <ProductsList products={this.props.productList}
         history={this.props.history} />
     } else {
-      return <span>Loading</span>
+      return <span className='message'>Loading...</span>
     }
   }
 }
