@@ -1,0 +1,23 @@
+.sort-box {
+  text-align: right;
+  margin-right: 1vw;
+  align-self: end;
+}
+
+.sort-box__text {
+  margin-right: 5px;
+}
+
+.sort-box button {
+  margin-right: 5px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #3c3742;
+  text-decoration: underline;
+}
+
+.sort-box button:hover {
+  color: #fac785;
+  cursor: pointer;
+}

@@ -5,7 +5,6 @@ import ProductsList from './ProductListPresentation'
 import { cleanUpListThunk } from '../../store/thunk/cleanUpThunk';
 import { filterList } from '../../helpers/filterList';
 
-
 class ProductListContainer extends React.Component {
 
   componentDidMount() {
@@ -17,14 +16,17 @@ class ProductListContainer extends React.Component {
   }
 
   render() {
-    console.log();
     if (this.props.error) {
-      return <></>
+      throw new Error(this.props.error);
     }
 
     if (this.props.isLoaded) {
-      return <ProductsList products={this.props.productList}
-        history={this.props.history} />
+      if (this.props.productList.length !== 0) {
+        return <ProductsList products={this.props.productList}
+          history={this.props.history} />
+      } else {
+        return <span className='message'>No results</span>
+      }
     } else {
       return <span className='message'>Loading...</span>
     }

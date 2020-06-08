@@ -1,39 +1,41 @@
 .product-list__card {
-    background-color: #fac785;
+  background-color: #fac785;
+  height: max-content;
 }
 
 .card__img {
-    width: 100%;
+  width: 100%;
 }
 
 .card__info {
-    padding: 10px;
-    align-items: end;
-    height: 74px;
-    background-color: white;
-    margin: -4px 2% 2%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  align-items: end;
+  height: 74px;
+  background-color: white;
+  margin: -4px 2% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card__title {
-    font-size: 30px;
-    align-self: start;
+  font-size: 30px;
+  align-self: start;
 }
 
 .card__price {
-    grid-column: 1;
-    font-size: 25px;
+  grid-column: 1;
+  font-size: 25px;
 }
 
 .card__btn {
-    text-align: end;
-    font-size: 20px;
-    color: #3c3742;
-    text-decoration: none;
+  text-align: end;
+  font-size: 20px;
+  color: #3c3742;
+  text-decoration: none;
 }
 
 .card__btn:hover {
-    color: #fac785;
-    text-decoration: underline;
+  color: #fac785;
+  text-decoration: underline;
+  cursor: pointer;
 }
