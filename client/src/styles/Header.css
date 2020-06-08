@@ -8,7 +8,8 @@
 }
 
 .header__logo {
-	height: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .header__rectangle {
@@ -25,7 +26,7 @@
 	font-size: 20px;
 	color: #3c3742;
 	text-decoration: none;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .header__nav a:first-child {
@@ -40,4 +41,5 @@
 .header__nav a:hover {
 	color: #fac785;
 	text-decoration: underline;
+  cursor: pointer;
 }

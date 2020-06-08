@@ -1,8 +1,8 @@
 .App {
-    display: grid;
-    grid-gap: 2vw;
-    grid-template-rows: max-content auto max-content;
-    min-height: 100vh;
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-rows: max-content auto max-content;
+  min-height: 100vh;
 }
 
 .message {
@@ -10,4 +10,5 @@
   font-size: 30px;
   text-align: center;
   margin-top: 20px;
+  grid-column: 1 / span 3;
 }

@@ -7,10 +7,10 @@ import rootReducer from "./store/reducers/rootReducer";
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import Header from "./components/Header/Header";
 import ProductsDetailContainer from "./components/ProductDetail/ProductDetailContainer";
-import ProductListContainer from "./components/ProductListPage/ProductListContainer";
 import Footer from "./components/Footer/Footer";
 import "./styles/App.css";
 import "./styles/common.css";
+import MainContentContainer from "./components/MainContent/MainContentContainer";
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
@@ -23,7 +23,7 @@ class App extends React.Component {
             <Header />
             <ErrorBoundary>
               <Switch>
-                <Route exact path={['/', '/products']} render={(props) => <ProductListContainer history={props.history} />} />
+                <Route exact path={['/', '/products']} render={(props) => <MainContentContainer history={props.history} />} />
                 <Route exact path='/products/:id' render={(props) => <ProductsDetailContainer id={props.match.params.id} />} />
               </Switch>
             </ErrorBoundary>
