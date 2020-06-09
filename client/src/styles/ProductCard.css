@@ -20,6 +20,7 @@
 .card__title {
   font-size: 30px;
   align-self: start;
+  grid-column: 1 / span 2;
 }
 
 .card__price {

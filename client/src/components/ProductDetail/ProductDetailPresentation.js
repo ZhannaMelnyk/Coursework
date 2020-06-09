@@ -14,8 +14,7 @@ class ProductDetail extends React.Component {
 					})
 				}
 			</ul>
-			<span className='product__price'>{this.props.product.price}</span>
-			{/* <input className='product__btn' type='submit'>Buy</input>  */}
+			<span className='product__price'>{this.props.product.price} UAH</span>
 		</main>
 	}
 }
