@@ -1,0 +1,27 @@
+{
+  "name": "coursework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhannaMelnyk/Coursework.git"
+  },
+  "author": "Zhanna Melnyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhannaMelnyk/Coursework/issues"
+  },
+  "homepage": "https://github.com/ZhannaMelnyk/Coursework#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0"
+  }
+}

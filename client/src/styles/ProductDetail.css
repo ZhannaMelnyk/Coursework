@@ -1,0 +1,73 @@
+.product {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-gap: 1vw;
+  margin-right: 1vw;
+  grid-template-rows: max-content max-content auto max-content;
+}
+
+.product__image {
+  width: 100%;
+  grid-row: 1 / span 4;
+}
+
+.product__title {
+  font-size: 50px;
+}
+
+.product__description {
+  padding: 20px 0;
+}
+
+.product__ingredient-list {
+  list-style: circle;
+}
+
+.product__ingredient-item {
+  padding-right: 10px;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.product__price {
+  text-align: end;
+  margin-right: 5vw;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    grid-gap: 2vw;
+    grid-template-rows: max-content max-content max-content max-content;
+  }
+
+  .product__title {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin: 0 1vw;
+  }
+
+  .product__description {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding: 0;
+    margin: 0 1vw;
+  }
+
+  .product__image {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .product__ingredient-list {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .product__price {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
