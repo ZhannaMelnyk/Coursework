@@ -2,22 +2,148 @@
   "products": [
     {
       "id": 1,
-      "name": "Croissant",
-      "description": "Confectionery masterpiece containing almond cream of its own production.",
+      "name": "Baguette",
+      "description": "This is one of the most striking symbols of France ... a country that is considered a cradle of food and eldorado for all food lovers.",
       "ingredients": [
-        "wheat flour",
-        "sugar",
-        "egg",
+        "water",
         "dry yeast",
-        "butter",
-        "oil",
-        "rock salt"
+        "salt",
+        "sugar",
+        "olive oil",
+        "sesame",
+        "wheat flour"
       ],
-      "price": "25 UAH",
-      "image": "http://localhost:3030/api/images/croissant.jpg"
+      "price": 19,
+      "image": "http://localhost:3030/api/images/baguette.jpg"
     },
     {
       "id": 2,
+      "name": "Palyanitsa",
+      "description": "In the production of Palyanitsa bread, we use only high-quality raw materials. The production technology is based on the use of leaven, which gives the product a pleasant taste and aroma, and also enriches with minerals (phosphorus, magnesium, potassium), vitamins (group B and vitamin PP, which are not destroyed by high temperatures).",
+      "ingredients": [
+        "spring water",
+        "high-grade wheat flour",
+        "wheat yeast",
+        "salt"
+      ],
+      "price": 25,
+      "image": "http://localhost:3030/api/images/palyanitsa.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Coconut tart",
+      "description": "Glazed with a coat of apricot jelly and finished with a cherry, these circular tarts are stuffed with a moist, rich coconut filling that is a mix of chewy and crisp.",
+      "ingredients": [],
+      "price": 16,
+      "image": "http://localhost:3030/api/images/coconut_tart.png"
+    },
+    {
+      "id": 4,
+      "name": "Borodynskiy bread",
+      "description": "Borodino bread is a variety of “black” bread that is widespread in Russia and is also very popular in the countries of the former Soviet Union. It is baked from a mixture of rye flour and second-grade wheat flour in a custard way.",
+      "ingredients": [
+        "rye flour",
+        "wheat flour",
+        "salt",
+        "yeast",
+        "rye malt",
+        "syrup",
+        "sugar",
+        "coriander",
+        "caraway"
+      ],
+      "price": 28,
+      "image": "http://localhost:3030/api/images/borodino.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Limonchello donut",
+      "description": "Our homage to the All-American staple includes chunks of hotdog and diced green onions baked within a soft bun.Filled with a sweet and tangy Lemoncello buttercream, this donut definitely has a sweet surprise inside.",
+      "ingredients": [],
+      "price": 33,
+      "image": "http://localhost:3030/api/images/limonchello_donut.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Wholegrain bread",
+      "description": "Since whole grain flour contains a grain shell, almost all products made from it are much healthier than those that contain flour of the first or second grade. It is the shell that contains all the vitamins, useful enzymes and amino acids, and the inside of the grain consists of almost all carbohydrates. This type of bread helps to remove toxins, salts of heavy metals and radioactive particles from the body, and is also rich in fiber, which cleanses the intestines and helps prevent cancer. Whole grain bread helps fight diabetes, coronary heart disease, and obesity.",
+      "ingredients": [],
+      "price": 22,
+      "image": "http://localhost:3030/api/images/tselnozernovyj.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hazelnut nutella donut",
+      "description": "Topped with a thin layer of Nutella and covered with crispy cereal pieces, this donut introduces a new way to eat your favorite chocolate spread.",
+      "ingredients": [],
+      "price": 35,
+      "image": "http://localhost:3030/api/images/hazelnut_nutella_donut.jpg"
+    },
+    {
+      "id": 8,
+      "name": "La Kaminski bread",
+      "description": "Custard bread with cranberries contains 25% dietary fiber, which are invaluable to the body and help maintain the flexibility and harmony of our body.",
+      "ingredients": [
+        "rye flour",
+        "wheat flour",
+        "whole grain flour",
+        "salt",
+        "rye sourdough",
+        "cranberries",
+        "walnut kernels"
+      ],
+      "price": 36,
+      "image": "http://localhost:3030/api/images/kaminskij.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Buckwheat bread",
+      "description": "The manufacturing technology involves the use of wheat yeast and yeast together, which gives the finished product vitamins (groups B and PP) and trace elements (phosphorus, potassium, magnesium).",
+      "ingredients": [
+        "wheat flour",
+        "buckwheat flour",
+        "salt",
+        "spring water",
+        "pressed yeast",
+        "sourdough"
+      ],
+      "price": 34,
+      "image": "http://localhost:3030/api/images/grechanyj.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Pumpkin bread",
+      "description": "The manufacturing technology involves the use of wheat yeast and yeast together, which gives the finished product vitamins (groups B and PP) and trace elements (phosphorus, potassium, magnesium).",
+      "ingredients": [
+        "wheat flour",
+        "sourdough",
+        "salt",
+        "water",
+        "pumpkin",
+        "pumpkin seeds",
+        "olive oil"
+      ],
+      "price": 33,
+      "image": "http://localhost:3030/api/images/pumpkin.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Danish nutella chocolate",
+      "description": "Folded inside layers of puff pastry, creamy Nutella chocolate is hidden inside this danish.",
+      "ingredients": [],
+      "price": 15,
+      "image": "http://localhost:3030/api/images/danish_nutella_chocolate.png"
+    },
+    {
+      "id": 12,
+      "name": "Spring onion bun",
+      "description": "Our homage to the All-American staple includes chunks of hotdog and diced green onions baked within a soft bun.",
+      "ingredients": [],
+      "price": 8,
+      "image": "http://localhost:3030/api/images/spring_onion_bun.jpg"
+    },
+    {
+      "id": 13,
       "name": "Muffin",
       "description": "Muffins own the sky! After all, they are pieces of happiness in the palm of your hand.",
       "ingredients": [
@@ -30,12 +156,12 @@
         "salt",
         "powdered sugar"
       ],
-      "price": "30 UAH",
+      "price": 30,
       "image": "http://localhost:3030/api/images/muffin.jpg"
     },
     {
-      "id": 3,
-      "name": "Éclairs",
+      "id": 14,
+      "name": "Eclairs",
       "description": "You haven't enjoyed an Éclair until you've tried a our fresh eclair!",
       "ingredients": [
         "flour",
@@ -45,29 +171,37 @@
         "egg",
         "salt"
       ],
-      "price": "35 UAH",
+      "price": 21,
       "image": "http://localhost:3030/api/images/eclair.jpg"
     },
     {
-      "id": 4,
-      "name": "Baguette",
-      "description": "This is one of the most striking symbols of France ... a country that is considered a cradle of food and eldorado for all food lovers.",
-      "ingredients": [
-        "water",
-        "dry yeast",
-        "salt",
-        "sugar",
-        "olive oil",
-        "sesame",
-        "wheat flour"
-      ],
-      "price": "25 UAH",
-      "image": "http://localhost:3030/api/images/baguette.jpg"
+      "id": 15,
+      "name": "Matcha donut",
+      "description": "This Japanese inspired donut has a matcha green tea based glaze on top of a classic donut ring.",
+      "ingredients": [],
+      "price": 37,
+      "image": "http://localhost:3030/api/images/matcha_donut.jpg"
     },
     {
-      "id": 5,
-      "name": "Doughnut",
-      "description": "Once you've tasted these irresistibly plump and sugary treats, there'll be no going back!",
+      "id": 16,
+      "name": "Croissant",
+      "description": "Confectionery masterpiece containing almond cream of its own production.",
+      "ingredients": [
+        "wheat flour",
+        "sugar",
+        "egg",
+        "dry yeast",
+        "butter",
+        "oil",
+        "rock salt"
+      ],
+      "price": 25,
+      "image": "http://localhost:3030/api/images/croissant.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Chocolate glazed donut",
+      "description": "Our fried donut is light and airy and is glazed with creamy chocolate.",
       "ingredients": [
         "milk",
         "dry yeast",
@@ -78,7 +212,7 @@
         "flour",
         "oil"
       ],
-      "price": "30 UAH",
+      "price": 30,
       "image": "http://localhost:3030/api/images/doughnut.jpg"
     }
   ]
