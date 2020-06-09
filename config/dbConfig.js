@@ -1,5 +1,5 @@
 const path = require('path');
-const dbPath = `${path.resolve()}/database.json`
+const dbPath = `${path.resolve()}/database.json`;
 
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');

@@ -1,8 +1,7 @@
 export function sortList(list, field, order) {
   if (order === 'asc') {
     sort(list, field);
-  }
-  if (order === 'desc') {
+  } else if (order === 'desc') {
     sort(list, field);
     list.reverse();
   }

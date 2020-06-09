@@ -1,12 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { listThunk } from '../../store/thunk/productListThunk'
-import ProductsList from './ProductListPresentation'
 import { cleanUpListThunk } from '../../store/thunk/cleanUpThunk';
 import { filterList } from '../../helpers/filterList';
+import ProductsList from './ProductListPresentation'
 
 class ProductListContainer extends React.Component {
-
   componentDidMount() {
     this.props.getList();
   }

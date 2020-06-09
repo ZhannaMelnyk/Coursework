@@ -5,13 +5,13 @@ const router = Router();
 const dbContext = dbAdapter.get('products');
 
 router.get('/', function (req, res, next) {
-	const result = dbContext.value()
+	const result = dbContext.value();
 
 	if (result) {
 		res.send(result);
 	} else {
 		res.status(404);
-		res.send('Page not found')
+		res.send('Page not found');
 	}
 })
 
@@ -22,7 +22,7 @@ router.get('/:id', function (req, res, next) {
 		res.send(result);
 	} else {
 		res.status(404);
-		res.send('Page not found')
+		res.send('Page not found');
 	}
 })
 

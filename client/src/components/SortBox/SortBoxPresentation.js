@@ -1,9 +1,8 @@
-import React from "react";
-import '../../styles/SortBox.css'
+import React from 'react';
+import '../../styles/SortBox.css';
 
 class SortBox extends React.Component {
   render() {
-    console.log(this.props);
     return <div className='sort-box'>
       <span className='sort-box__text'>Sort by:</span>
       <button onClick={this.props.handleClick.bind(this, 'price', 'asc')}>low to high price</button>
