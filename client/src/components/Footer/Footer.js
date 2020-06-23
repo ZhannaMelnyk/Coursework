@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Footer.css';
+import './Footer.css';
 const logo = require('../../assets/Footer-bakery-logo.png');
 
 export default class Footer extends React.Component {
