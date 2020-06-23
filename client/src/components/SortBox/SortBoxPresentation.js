@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/SortBox.css';
+import './SortBox.css';
 
 class SortBox extends React.Component {
   render() {

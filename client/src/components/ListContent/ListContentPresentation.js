@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBoxContainer from '../SearchBox/SearchBoxContainer';
 import SortBoxContainer from '../SortBox/SortBoxContainer';
 import ProductListContainer from '../ProductList/ProductListContainer';
-import '../../styles/ListContent.css';
+import './ListContent.css';
 
 class ListContent extends React.Component {
   render() {

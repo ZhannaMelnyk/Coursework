@@ -9,8 +9,8 @@ import ListContentContainer from './components/ListContent/ListContentContainer'
 import ProductsDetailContainer from './components/ProductDetail/ProductDetailContainer';
 import Footer from './components/Footer/Footer';
 import rootReducer from './store/reducers/rootReducer';
-import './styles/App.css';
-import './styles/common.css';
+import './App.css';
+import './Common.css';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
